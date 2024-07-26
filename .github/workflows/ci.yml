@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    runs-on: windowns-latest
+    runs-on: windows-latest
 
     steps:
     - name: Checkout repository
@@ -14,6 +14,6 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.TOKEN }}
         publish_dir: ./
 
